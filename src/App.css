@@ -72,6 +72,12 @@ li:hover {
   justify-content: center;
   align-items: center;
   color: var(--darkText);
+  flex-direction: column;
+}
+
+.about p {
+  max-width: 600px;
+  padding: 15px 20px;
 }
 
 /* Contact */
@@ -99,3 +105,23 @@ footer {
     font-weight: 600;
   }
 
+/* media queries */
+
+@media(max-width: 500px) {
+
+  li {
+    margin: 8px;
+  }
+
+  .home, .about, .contact {
+    padding: 10px 25px;
+  }
+
+  .about p {
+    padding: 10px;
+  }
+
+  footer{
+    padding: 8px 10px;
+  }
+}
