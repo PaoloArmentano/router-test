@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+:root {
+  --background: #fff6c6;
+  --secondary: #dcc37c;
+  --third: #cd3335;
+  --lightText: #fefefe;
+  --darkText: #2c2c2c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav */
+
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: 2rem;
+  background-color: var(--secondary);
+  height: 100px;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--lightText);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link {
+  text-decoration: none;
+  background-color: var(--third);
+  color: var(--lightText);
+  font-weight: 550;
+  padding: 4px 15px;
+  border-radius: 1rem;
 }
+
+li:hover {
+  transition: 500ms;
+  transform: scale(1.1);
+}
+
+
+/* Home */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--darkText);
+}
+
+/* About */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkText);
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkText);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary);
+    color: var(--lightText);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+  }
+
